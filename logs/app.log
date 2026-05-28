@@ -1,0 +1,35 @@
+2026-05-28 20:02:24 | INFO     | __main__:main:17 - 🤖 Job Scraper v2.0 - Playwright Edition
+2026-05-28 20:02:24 | ERROR    | __main__:main:22 - ❌ TARGET_URL no definida en config/.env
+2026-05-28 20:07:23 | INFO     | __main__:main:17 - 🤖 Job Scraper v2.0 - Playwright Edition
+2026-05-28 20:07:23 | INFO     | src.scrapers.base:start:29 - 🚀 Iniciando navegador Playwright...
+2026-05-28 20:07:26 | INFO     | src.scrapers.base:start:44 - ✅ Navegador listo y configurado con stealth
+2026-05-28 20:07:26 | INFO     | src.scrapers.linkedin_jobs:scrape_multiple_pages:65 - 📄 Procesando página 1/2
+2026-05-28 20:07:26 | INFO     | src.scrapers.base:goto_with_retry:56 - 🌐 Navegando a: https://books.toscrape.com/
+2026-05-28 20:07:32 | INFO     | src.scrapers.linkedin_jobs:scrape_page:31 - 📦 Encontradas 20 ofertas en página 1
+2026-05-28 20:07:33 | INFO     | src.scrapers.linkedin_jobs:scrape_multiple_pages:71 - ⏱️ Pausa humana: 5.1s antes de siguiente página...
+2026-05-28 20:07:38 | INFO     | src.scrapers.linkedin_jobs:scrape_multiple_pages:65 - 📄 Procesando página 2/2
+2026-05-28 20:07:38 | INFO     | src.scrapers.base:goto_with_retry:56 - 🌐 Navegando a: https://books.toscrape.com/&page=2
+2026-05-28 20:07:41 | INFO     | src.scrapers.base:goto_with_retry:56 - 🌐 Navegando a: https://books.toscrape.com/&page=2
+2026-05-28 20:07:44 | INFO     | src.scrapers.base:goto_with_retry:56 - 🌐 Navegando a: https://books.toscrape.com/&page=2
+2026-05-28 20:07:44 | ERROR    | src.scrapers.linkedin_jobs:scrape_page:58 - ❌ Error en página 2: RetryError[<Future at 0x183db21cc80 state=finished raised Exception>]
+2026-05-28 20:07:44 | INFO     | src.scrapers.linkedin_jobs:scrape_multiple_pages:74 - 🛑 No hay más resultados. Deteniendo scrapeo.
+2026-05-28 20:07:45 | INFO     | src.scrapers.base:close:51 - 🔒 Navegador cerrado correctamente
+2026-05-28 20:07:45 | INFO     | __main__:main:41 - 🧹 Limpiando y normalizando datos...
+2026-05-28 20:07:45 | INFO     | src.etl.load:export_to_csv:29 - 📄 Exportado a CSV: jobs_20260528.csv (20 registros)
+2026-05-28 20:07:45 | INFO     | src.etl.load:export_to_db:46 - 💾 Guardado en DB: tracker.db (20 nuevos registros en 'jobs')
+2026-05-28 20:07:45 | INFO     | __main__:main:52 - ✅ Finalizado. 20 empleos procesados correctamente.
+2026-05-28 20:15:47 | INFO     | __main__:main:17 - 🤖 Job Scraper v2.0 - Playwright Edition
+2026-05-28 20:15:47 | INFO     | src.scrapers.base:start:29 - 🚀 Iniciando navegador Playwright...
+2026-05-28 20:15:49 | INFO     | src.scrapers.base:start:44 - ✅ Navegador listo y configurado con stealth
+2026-05-28 20:15:49 | INFO     | src.scrapers.linkedin_jobs:scrape_multiple_pages:81 - 📄 Procesando página 1/2
+2026-05-28 20:15:49 | INFO     | src.scrapers.base:goto_with_retry:56 - 🌐 Navegando a: https://books.toscrape.com
+2026-05-28 20:15:54 | INFO     | src.scrapers.linkedin_jobs:scrape_page:47 - 📦 Encontradas 20 ofertas en página 1
+2026-05-28 20:15:55 | INFO     | src.scrapers.linkedin_jobs:scrape_multiple_pages:87 - ⏱️ Pausa humana: 4.0s antes de siguiente página...
+2026-05-28 20:15:59 | INFO     | src.scrapers.linkedin_jobs:scrape_multiple_pages:81 - 📄 Procesando página 2/2
+2026-05-28 20:15:59 | INFO     | src.scrapers.base:goto_with_retry:56 - 🌐 Navegando a: https://books.toscrape.com/catalogue/page-2.html
+2026-05-28 20:16:05 | INFO     | src.scrapers.linkedin_jobs:scrape_page:47 - 📦 Encontradas 20 ofertas en página 2
+2026-05-28 20:16:06 | INFO     | src.scrapers.base:close:51 - 🔒 Navegador cerrado correctamente
+2026-05-28 20:16:06 | INFO     | __main__:main:41 - 🧹 Limpiando y normalizando datos...
+2026-05-28 20:16:06 | INFO     | src.etl.load:export_to_csv:29 - 📄 Exportado a CSV: jobs_20260528.csv (60 registros)
+2026-05-28 20:16:06 | INFO     | src.etl.load:export_to_db:46 - 💾 Guardado en DB: tracker.db (60 nuevos registros en 'jobs')
+2026-05-28 20:16:06 | INFO     | __main__:main:52 - ✅ Finalizado. 60 empleos procesados correctamente.
