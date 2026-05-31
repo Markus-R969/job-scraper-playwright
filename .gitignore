@@ -1,5 +1,13 @@
-.venv/
+﻿.venv/
+__pycache__/
+*.pyc
+config/.env
 data/
 logs/
 *.db
-*.csv
+output/
+screenshots/
+videos/
+.vscode/
+.DS_Store
+Thumbs.db
